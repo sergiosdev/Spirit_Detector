@@ -18,7 +18,9 @@
 #define antenaPin A0 
 int     valSerial = 0;        
 float   voltagem =0; 
-
+float   sensibilidadeVoltagem=0.70; // Parâmetro a ser alterado de acordo com a sua antena, deve ser ajustado
+                                    // ...para que se obtenha o melhor resultado, com maior distância nas 
+                                    // ...captações sem fio.        
 
 // --- Função ---
 void ligaDesligaLED()
@@ -51,7 +53,7 @@ void loop() {
   
 
    /* Se a voltagem cair ou o valSerialor da porta serial chegar a zero então detecta-se uma presença. */
-  if(valSerial == 0  || voltagem <= 0.30) { 
+  if(valSerial == 0  || voltagem <= sensibilidadeVoltagem) { 
     Serial.println(F(""));
     Serial.println(F("[Espirito Detectado]")); 
     Serial.println(F(""));
