@@ -52,7 +52,7 @@ void loop() {
    /* Se a voltagem cair ou o valSerialor da porta serial chegar a zero então detecta-se uma presença. */
   if(valSerial == 0  || voltagem <= sensibilidadeVoltagem) { 
     Serial.println(F(""));
-    Serial.println(F("[Espirito Detectado]")); 
+    Serial.println(F("[Alguém foi Detectado!]")); 
     Serial.println(F(""));
     
     ligaDesligaLED();
