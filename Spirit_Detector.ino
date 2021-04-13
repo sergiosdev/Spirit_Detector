@@ -1,7 +1,4 @@
 /*
-   Rio do Tempo & Projeto Transcomunicadores
-   instagram.com/riodotempo          | riodotempo.com
-   instagram.com/transcomunicadores  | facebook.com/transcomunicadores
                                     
    # Developers: Sérgio Ferreira & Wagner Annunciato
                                       Em: 01/02/2021
